@@ -1,0 +1,25 @@
+net: "../merge_models/res50_multigpu_new.prototxt"
+
+test_iter: 1000
+test_interval: 20000000
+
+base_lr: 0.001
+momentum: 0.9
+lr_policy: "step"
+stepsize: 20000
+
+gamma: 0.1
+layer_wise_reduce: false
+
+iter_size: 1
+display: 0
+average_loss: 10
+max_iter: 30000
+
+weight_decay: 0.0005
+
+snapshot: 10000
+snapshot_prefix: "../models/resnet50_multigpu_v1"
+solver_mode: GPU
+#device_id: 0
+test_initialization: false

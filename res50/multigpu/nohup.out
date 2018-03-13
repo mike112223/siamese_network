@@ -1,0 +1,13 @@
+usage: train_multi_gpus.py [-h] [--gpu GPUS] [--solver SOLVER_PROTOTXT]
+                           [--weights PRETRAINED_MODEL] [--timing TIMING]
+
+Train a triplet network
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --gpu GPUS            GPU device id to use "0,1,2"
+  --solver SOLVER_PROTOTXT
+                        solver prototxt
+  --weights PRETRAINED_MODEL
+                        initialize with pretrained model weights
+  --timing TIMING       timeing the training process
